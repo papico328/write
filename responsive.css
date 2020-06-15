@@ -78,6 +78,10 @@
             width: 100%;
         }
 
+        .heavy {
+            font-size: 100%;
+        }
+
         .profilewidget-text p {
             font-size: 16px;
         }
