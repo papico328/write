@@ -1,111 +1,425 @@
-    @media (max-width: 1035px) {
-        * {
-            box-sizing: border-box;
-        }
-    }
+/* * {
+    box-sizing: border-box;
+} */
 
-    @media (max-width: 670px) {
-        * {
-            box-sizing: border-box;
-        }
+/* .wrap {
+	overflow: hidden;
+} */
 
+h1, p, li, ul, body, h2, a {
+    margin: 0;
+    padding: 0;
+}
 
-        .container { 
-            width: 100%;
-            margin: 0;
-            padding: 45px 20px;
-        }
+body {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+	font-family: Georgia, '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+	line-height: 1.8;
+}
 
+h1, h2, h3, h4, h5, h6, .site-title, input {
+	font-family: Georgia, '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+}
 
-        .top-image {
-            width: 100%;
-        }
+p {
+    font-size: 93.8%;
+    margin: 0 0 1.5em;
+}
 
-        .top-wrapper h2 {
-            font-size: 23px;
-        }
+a {
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+}
 
-        .header-right {
-            display: none;
-        }
+.menu-icon a:hover, .text-area a:hover, .recent-posts a:hover, .categories a:hover {
+    color:#c49029;
+}
 
-        .icon {
-            display: block;
-        }
+.date a:hover, footer a:hover,.fa-twitter:hover, .fa-facebook-f:hover, .fa-instagram:hover {
+    color: #333;
+}
 
-        .text-form {
-            display: block;
-        }
+.nav-links a:hover {
+    border-color: #ccc;
+    color: #333;
+}
 
-        .date {
-            width: 100%;
-        }
+ul {
+    list-style-type: none;
+}
 
-        .text-area {
-            width: 100%;
-        }
+li {
+    display: inline-block;
+}
 
-        .page-numbers {
-            display: none;
-        }
+.container {
+    margin: 60px 40px;
+    width: 1035px;
+    max-width: 1170px;
+}
 
-        .nav-links {
-            width: 100%;
-        }
+header {
+    display: flex;
+    align-items: flex-end;
+    height: 82px; 
+    margin-bottom: 70px;
+}
 
-        .next {
-            display: flex;
-        }
+.header-left {
+    padding-right: 75px;
+    padding-bottom: 10px;
+    text-align: left;
+    width: 260px;
+}
 
-        .widget-area {
-            display: block;
-            height: auto;
-        }
-        
-        .widget-side, .textwidget, .recent-posts {
-            padding: 0;
-            display: block;
-            width: 100%;
-            margin-bottom: 60px;
-        }
+.header-left h1 {
+    line-height: 1.2;
+    font-size: 36px;
+    /* font-family: Georgia; */
+}
 
-        .profilewidget-text {
-            padding: 0;
-            display: block;
-            width: 100%;
-        }
+.header-left a {
+    color: #000;
+}
 
-        .profilewidget-text p {
-            font-size: 16px;
-        }
+.header-left p {
+    margin: 0;
+    line-height: 1.4;
+    /* font-family: "游明朝"; */
+    font-size: 18px;
+    color: #777777;
+    padding-top: 4px;
+}
 
-        .textwidget h2, .textwidget p {
-            display: block;
-            width: 100%;
-        }
+.header-right {
+    margin-top: 0;
+    display: flex;
+    flex: auto;
+    line-height: 52px;
+}
 
-        
-        .search {
-            display: block;
-            width: 100%;
-            padding: 0;
-        }
+.icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
 
-        .categories {
-            padding: 0;
-            display: block;
-            width: 100%;
-            padding-bottom: 20%;
-        }
+.menu-icon {
+    /* font-family: "游明朝"; */
+    font-size: 16.884px;
+    padding-right: 60px;
+}
 
+.menu-icon ul {
+    font-size: 1em;
+    margin-bottom: 0;
+}
 
-        footer, .menu-social {
-            display: block;
-            width: 100%;
-            position: static;
-        }
+.menu-icon li {
+    letter-spacing: normal;
+}
 
-        .site-credit {
-            font-size: 80%;
-        }
-    }
+.menu-icon a {
+    text-decoration: none;
+    color: #111;
+}
+
+.home::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    right: -8px;
+    top: 1px;
+    -webkit-text-stroke:1px #fff
+}
+
+.home, .page, .typography, .contact{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.home {
+    padding-left: 0px;
+}
+
+.contact {
+    padding-right: 0px;
+}
+
+.page::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    right: -8px;
+    top: 1px;
+    -webkit-text-stroke:1px #fff
+}
+
+.search-area {
+    height: 16.884px;
+    margin-left: auto;
+}
+
+.fa-search {
+    -webkit-text-stroke:1px #fff
+}
+
+.search-gray {
+    color: #333;
+}
+
+.top-image {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    margin-bottom: 90px;
+}
+
+.top-wrapper h2 {
+    font-weight: normal;
+    /* font-family: "游明朝"; */
+    font-size: 27px;
+    color: #777;
+    margin-bottom: 90px;
+    padding-bottom: 25px;
+}
+
+.text-form {
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.date {
+    padding-right: 75px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.date a {
+    /* font-family: Georgia; */
+    padding-right: 16px;
+    font-size: 93.8%;
+}
+
+.text-area {
+    width: 700px;
+    margin-left: auto;
+}
+
+.text-area a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 22.4px;
+    /* font-family: 游明朝; */
+    text-decoration: none;
+    color: #111;
+    padding-right: 16px;
+}
+
+.text-area p {
+    font-size: 16.884px;
+    /* font-family: 游明朝; */
+    color: #666;
+}
+
+.nav-links {
+    display: flex;
+    width: 700px;
+    margin-left: auto;
+    font-size: 93.8%;
+    height: 48px;
+    margin-bottom: 105px;
+}
+
+.page-numbers {
+    display: inline-block;
+    border: solid 1px #ddd;
+    padding: 8px 18px;
+    margin-right: 6px;
+    /* height: 30px; */
+}
+
+.current {
+    background-color: #eee;
+    border: solid 1px #ccc;
+    color: #333;
+    font-weight: 700;
+}
+
+.widget-area {
+    border-top: solid 1px #e6e6e6;
+    display: flex;
+    align-items: flex-start;
+    font-size: 93.8%;
+    padding-top: 75px;
+    color: #666;
+    line-height: 1.7;
+    height: 360px;
+    border-bottom: solid 1px #e6e6e6;
+}
+
+.widget-side {
+    padding-right: 75px;
+    width: 260px;
+    margin-bottom: 20px;
+}
+
+.widget-side  img {
+    border-radius: 50%;
+    width: 100px;
+    margin-right: 18px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.widget-top {
+    margin-bottom: 20px;
+}
+
+.profilewidget-meta {
+    display: inline-block;
+    vertical-align: middle;
+    width: 92.977px;
+    height: 64.500px;
+    margin-bottom: 20px;
+}
+
+.heavy {
+    color: #333;
+    font-weight: 600;
+    font-size: 112.5%;
+    margin: 0;
+}
+
+.fab {
+    display: inline-block;
+    width: 20px;
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+
+.fa-twitter, .fa-facebook-f, .fa-instagram {
+    color: #999;
+    margin-right: 2px;
+}
+
+.profilewidget-text p {
+    font-size: 16.884px;
+}
+
+.textwidget {
+    width: 212.500px;
+    padding-right: 40px;
+}
+
+h2 {
+    color: #333;
+    font-size: 14.4px;
+    margin-bottom: 30px;
+}
+
+/* .textwidget p {
+    font-size: 93.8%;
+    margin: 0 0 1.5em;
+} 
+    おおよそいらない*/
+
+.recent-posts {
+    width: 193px;
+    padding-right: 40px;
+}
+
+.recent-posts li {
+    display: list-item;
+}
+
+.recent-posts a {
+    color: #666;
+    border-bottom: 1px #ddd solid;
+}
+
+.recent-posts p {
+    color: #999;
+    font-size: 86.7%;
+    margin-top: 4px;
+}
+
+.categories {
+    width: 214px;
+}
+
+.categories ul {
+    margin-bottom: 75px;
+}
+
+.categories li {
+    display: list-item;
+    margin-top: 4px;
+    padding-bottom: 14px;
+}
+
+.categories a {
+    color: #666;
+    border-bottom:1px #ddd solid;
+}
+
+input {
+    width: 100%;
+}
+/* 幅がいまいち */
+
+input[type=search] {
+    display: block;
+    border: solid 1px #e6e6e6;
+    color: #777;
+    padding: 0.6em;
+}
+
+input[placeholder] {
+    color: #999;
+    font-size: 100%;
+}
+
+footer {
+    padding-top: 60px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-social {
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin: 0 0 25px 0;
+}
+
+.social-twitter {
+    padding-right: 12px;
+}
+
+.social-facebook {
+    padding-right: 12px;
+}
+
+.site-credit a, .site-credit p {
+    font-size: 87.5%;
+    display: inline-block;
+}
+
+.site-credit a {
+    color: #666;
+}
+
+.site-credit p {
+    color: #999;
+}
