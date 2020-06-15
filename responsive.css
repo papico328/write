@@ -9,7 +9,6 @@
             box-sizing: border-box;
         }
 
-
         .container { 
             width: 100%;
             margin: 0;
@@ -18,7 +17,11 @@
 
 
         .top-image {
-            width: 100%;
+            margin-left: -20px;
+        }
+
+        .image {
+            width: 100vw;
         }
 
         .top-wrapper h2 {
