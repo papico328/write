@@ -2,12 +2,6 @@
         * {
             box-sizing: border-box;
         }
-    }
-
-    @media (max-width: 670px) {
-        * {
-            box-sizing: border-box;
-        }
 
         .container { 
             width: 100%;
