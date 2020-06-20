@@ -21,14 +21,24 @@
                     <div class="header-right"> 
                         <div class="menu-icon">
                             <ul>
-                                <li><a class="home" href="#">ホーム</a></li></a></li>
-                                <li><a class="page" href="#">ページ</a></li>
+                                <li class="home-icon"><a class="home" href="#">ホーム</a></li>
+                                <li><a class="home-menu" href="#">→カスタマイズ</a></li>
+                                <li class="page-icon"><a class="page" href="#">ページ</a></li>
+                                <div class="page-menu">
+                                    <ul>
+                                        <li class="page-noimage"><a href="#">アイキャッチ画像無しのページ</a></li>
+                                        <li class="page-page"><a href="#">ページ (全幅テンプレート)</a></li>
+                                    </ul>
+                                </div>
                                 <li><a class="typography" href="#">タイポグラフィー</a></li>
                                 <li><a class="contact" href="#">お問い合わせ</a></li>
                             </ul>
                         </div>   
-                        <div class="search-area">
+                        <div class="search-area button">
                             <a href ="#"><span class="fa fa-search search-gray fa-lg"></span></a>
+                            <form>
+                                <input class="search-click" type="search" placeholder="検索…">
+                            </form>
                         </div>
                     </div>
                     <div class="icon">
@@ -156,11 +166,9 @@
                                 <a href="#">普通の投稿</a>
                             </li>
                         </ul>
-                        <div class="search">
-                            <form>
-                                <input  type="search" placeholder="検索…">
-                            </form>
-                        </div>
+                        <form>
+                            <input class="search" type="search" placeholder="検索…">
+                        </form>
                     </div>
                 </div>
                 <footer>
@@ -180,5 +188,6 @@
                 </footer>
             </div>
         <!-- </div> -->
+        <!--実験 --><script src="over.js"></script>
     </body>
 </html>
